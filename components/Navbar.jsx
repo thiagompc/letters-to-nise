@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="w-full h-[60px] border-b-2 border-[#6b0604b2]">
+      <div className="w-full h-[60px] bg-transparent border-b-2 border-[#6b0604b2]">
         <div className="flex h-full justify-end items-center">
           <ul className="hidden md:flex items-center">
             <Link href="/">

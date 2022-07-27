@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      primary: ["Parisienne", "cursive"]
+      primary: ["Parisienne", "cursive"],
+      secondary: ["Charm", "cursive"]
     },
   },
   plugins: [],

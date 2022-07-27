@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Parisienne&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +10,7 @@
     @apply bg-[#FCF0CC] text-[#000501] tracking-wide
   }
 
-  h1, h2 ,h3, h4, h5, h6 {
+  h1, h2 {
     @apply text-[#000501] font-primary
   }
 
@@ -20,6 +20,14 @@
 
   h2 {
     @apply text-3xl sm:text-4xl
+  }
+
+  h3 {
+    @apply font-secondary
+  }
+
+  span {
+    @apply font-secondary
   }
 
   li {
@@ -32,6 +40,10 @@
 
   .main-background {
     background: radial-gradient(54.18% 54.18% at 50% 50%, #FCF0CC 37.31%, rgba(167, 126, 88, 0.7) 100%);
+  }
+
+  .letters-background {
+    background: radial-gradient(54.18% 54.18% at 50% 50%, #FCF0CC 0%, rgba(167, 126, 88, 0.7) 72.6%);
   }
 
 }
