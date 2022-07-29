@@ -1,12 +1,16 @@
 import React from "react"
 import Image from "next/image"
+import Link from "next/link"
+import Button from "./Button"
 
-export default function Letter() {
+export default function Letter(props) {
   return(
-    <div className="p-20">
-      <div className="flex">
-        <div className="bg-[url('../public/assets/paper-textured-background.jpg')] w-[40rem] h-72">
-           <div className="bg-[#D8BF99] w-full h-full bg-opacity-80 border-solid border-2 border-[#D8BF99] shadow-lg">
+    <div className="px-20 py-10">
+      <div className="flex justify-center">
+        <a href={props.link} className="w-[40rem]">
+          <div className="bg-[url('../public/assets/paper-textured-background.jpg')] w-full h-72">
+           <div className="bg-[#D8BF99] w-full h-full bg-opacity-80 border-solid border-4 border-[#D8BF99] shadow-xl hover:border-2
+           ">
             <div className="flex justify-between p-5">
               <div className="text-left">
                 <h3>Beatriz Sousa Liarte</h3>
@@ -21,15 +25,20 @@ export default function Letter() {
               />
             </div>
             <div className="text-center">
-              <h3>Nise Magalhães da Silveira</h3>
+              <span className="text-xl">{props.title}</span>
+              <h3 className="pt-4">Nise Magalhães da Silveira</h3>
               <h3>Rio de Janeiro, Rio de Janeiro</h3>
               <h3>Brasil</h3>
             </div>
           </div>
            </div>
-        <div className="p-10 w-1/2">
-          <h2>Carta 1</h2>
-          <span className="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quia itaque, inventore culpa non qui corporis cupiditate neque, repudiandae atque repellendus alias vitae assumenda modi explicabo recusandae magnam natus velit.</span>
+        </a>
+        <div className="pb-10 px-10 w-1/2">
+          <h2 className="font-secondary">{props.title}</h2>
+          <div className="py-4">
+            <span className="text-xl">{props.text}</span>
+          </div>
+          <Button name="Abrir Carta" link="/"/>
         </div>
       </div>
     </div>

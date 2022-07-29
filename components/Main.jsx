@@ -1,6 +1,7 @@
 import React from "react"
 import Button from "./Button"
 import Typewriter from 'typewriter-effect';
+import Link from "next/link";
 
 const Main = () => {
   return(
@@ -19,8 +20,8 @@ const Main = () => {
           />
         </h1> */}
           <h1 className="pb-10 text-center">Cartas para Nise</h1>
-          <h2 className="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero architecto excepturi quo aperiam iure optio cupiditate, nulla at autem necessitatibus unde sapiente, pariatur, quibusdam asperiores molestias labore deserunt eum.</h2>
-          <Button/>
+          <h3 className="text-center text-xl font-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero architecto excepturi quo aperiam iure optio cupiditate, nulla at autem necessitatibus unde sapiente, pariatur, quibusdam asperiores molestias labore deserunt eum.</h3>
+          <Button name="Ir às Cartas" link="/cartas"/>
         </div>
       </div>
     </div>

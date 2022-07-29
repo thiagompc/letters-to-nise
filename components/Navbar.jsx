@@ -11,17 +11,17 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="w-full h-[60px] bg-transparent border-b-2 border-[#6b0604b2]">
+      <div className="w-full h-[60px] bg-transparent">
         <div className="flex h-full justify-end items-center">
           <ul className="hidden md:flex items-center">
             <Link href="/">
-              <li className="mr-10 text-sm uppercase hover:border-b">Início</li>
+              <li className="mr-10 text-sm uppercase hover:border-b border-[#6b0504]">Início</li>
             </Link>
             <Link href="/">
-              <li className="mr-10 text-sm uppercase hover:border-b">Cartas</li>
+              <li className="mr-10 text-sm uppercase hover:border-b border-[#6b0504]">Cartas</li>
             </Link>
             <Link href="/">
-              <li className="mr-10 text-sm uppercase hover:border-b">Sobre mim</li>
+              <li className="mr-10 text-sm uppercase hover:border-b border-[#6b0504]">Sobre mim</li>
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden mr-5">
