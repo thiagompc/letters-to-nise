@@ -35,7 +35,7 @@ export default function Letter(props) {
           </div>
            </div>
         </a>
-        <div className="px-4 pt-10 w-full sm:w-1/2 sm:pt-0">
+        <div className="px-4 pt-10 w-full sm:w-1/2 sm:pt-0 sm:px-10 ">
           <h2 className="font-secondary">{props.title}</h2>
           <div className="py-4">
             <span className="text-xl">{props.text}</span>
