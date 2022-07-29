@@ -17,7 +17,7 @@ const Navbar = () => {
             <Link href="/">
               <li className="mr-10 text-sm uppercase hover:border-b border-[#6b0504]">Início</li>
             </Link>
-            <Link href="/">
+            <Link href="/cartas">
               <li className="mr-10 text-sm uppercase hover:border-b border-[#6b0504]">Cartas</li>
             </Link>
             <Link href="/">

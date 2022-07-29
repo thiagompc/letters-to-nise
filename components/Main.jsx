@@ -1,13 +1,14 @@
 import React from "react"
 import Button from "./Button"
 import Typewriter from 'typewriter-effect';
-import Link from "next/link";
+
+import Navbar from "./Navbar";
 
 const Main = () => {
   return(
-    <div className="main-background">
+    <div className="main-background h-screen overflow-auto">
       <div className="sm:bg[100px] md:flex justify-items-center main-background bg-[url('../public/assets/NiseOpacity.svg')] bg-no-repeat bg-center bg-auto h-screen ">
-        <div className="md:px-20 py-20 w-full">
+        <div className="md:px-20 py-10 w-full">
         {/* <h1>
           <Typewriter
             options={{

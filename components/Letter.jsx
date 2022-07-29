@@ -1,44 +1,46 @@
 import React from "react"
 import Image from "next/image"
-import Link from "next/link"
 import Button from "./Button"
 
 export default function Letter(props) {
   return(
-    <div className="px-20 py-10">
-      <div className="flex justify-center">
+    <div className="px-4 sm:px-20 py-10">
+      <div className="sm:flex justify-center">
         <a href={props.link} className="w-[40rem]">
-          <div className="bg-[url('../public/assets/paper-textured-background.jpg')] w-full h-72">
-           <div className="bg-[#D8BF99] w-full h-full bg-opacity-80 border-solid border-4 border-[#D8BF99] shadow-xl hover:border-2
-           ">
+          <div className="bg-[url('../public/assets/paper-textured-background.jpg')] w-full h-60 sm:h-72">
+           <div className="bg-[#D8BF99] w-full h-full bg-opacity-80 border-solid border-4 border-[#D8BF99] shadow-xl hover:border-2">
             <div className="flex justify-between p-5">
-              <div className="text-left">
-                <h3>Beatriz Sousa Liarte</h3>
-                <h3>Brasília, Distrito Federal</h3>
-                <h3>Brasil</h3>
+              <div className="text-sm text-left sm:text-lg">
+                <span>Beatriz Sousa Liarte</span><br/>
+                <span>Brasília, Distrito Federal</span><br/>
+                <span>Brasil</span><br/>
               </div>
-              <Image
-                width={200}
-                height={90}
-                src="/../public/assets/stamp.png"
-                alt="Letter stamp"
-              />
+              <div className="w-32 sm:w-52">
+                <Image
+                  width={200}
+                  height={90}
+                  src="/../public/assets/stamp.png"
+                  alt="Letter stamp"
+                />
             </div>
-            <div className="text-center">
-              <span className="text-xl">{props.title}</span>
-              <h3 className="pt-4">Nise Magalhães da Silveira</h3>
-              <h3>Rio de Janeiro, Rio de Janeiro</h3>
-              <h3>Brasil</h3>
+              </div>
+            <div className="text-sm text-center sm:text-lg">
+              <div className="pb-2">
+                <span className="text-sm sm:text-xl">{props.title}</span><br/>
+              </div>
+              <span className="pt-4">Nise Magalhães da Silveira</span><br/>
+              <span>Rio de Janeiro, Rio de Janeiro</span><br/>
+              <span>Brasil</span><br/>
             </div>
           </div>
            </div>
         </a>
-        <div className="pb-10 px-10 w-1/2">
+        <div className="px-4 pt-10 w-full sm:w-1/2 sm:pt-0">
           <h2 className="font-secondary">{props.title}</h2>
           <div className="py-4">
             <span className="text-xl">{props.text}</span>
           </div>
-          <Button name="Abrir Carta" link="/"/>
+          <Button name="Abrir Carta" link={props.link}/>
         </div>
       </div>
     </div>
