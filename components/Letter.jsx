@@ -1,12 +1,14 @@
 import React from "react"
 import Image from "next/image"
 import Button from "./Button"
+import { useRouter } from "next/router"
 
 export default function Letter(props) {
+  const router = useRouter()
   return(
     <div className="px-4 sm:px-20 py-10">
       <div className="sm:flex justify-center">
-        <a href={props.link} className="w-[40rem]">
+        <div onClick={()=>router.push(props.link)} className="w-[40rem] cursor-pointer">
           <div className="bg-[url('/assets/paper-textured-background.jpg')] w-full h-60 sm:h-72">
            <div className="bg-[#D8BF99] w-full h-full bg-opacity-80 border-solid border-4 border-[#D8BF99] shadow-xl hover:border-2">
             <div className="flex justify-between p-5">
@@ -19,7 +21,7 @@ export default function Letter(props) {
                 <Image
                   width={200}
                   height={90}
-                  src="/../public/assets/stamp.png"
+                  src="/assets/stamp.png"
                   alt="Letter stamp"
                 />
             </div>
@@ -34,7 +36,7 @@ export default function Letter(props) {
             </div>
           </div>
            </div>
-        </a>
+        </div>
         <div className="px-4 pt-10 w-full sm:w-1/2 sm:pt-0 sm:px-10 ">
           <h2 className="font-secondary">{props.title}</h2>
           <div className="py-4">

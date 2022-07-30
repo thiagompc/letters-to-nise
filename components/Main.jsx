@@ -2,8 +2,6 @@ import React from "react"
 import Button from "./Button"
 import Typewriter from 'typewriter-effect';
 
-import Navbar from "./Navbar";
-
 const Main = () => {
   return(
     <div className="main-background h-screen overflow-auto flex justify-center">
