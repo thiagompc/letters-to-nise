@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 const Main = () => {
   return(
     <div className="main-background h-screen overflow-auto flex justify-center">
-      <div className="bg-contain md:flex justify-items-center main-background bg-[url('../public/assets/NiseOpacity.svg')] bg-no-repeat bg-center sm:bg-auto h-screen max-w-7xl items-center">
+      <div className="bg-contain md:flex justify-items-center main-background bg-[url('/assets/NiseOpacity.svg')] bg-no-repeat bg-center sm:bg-auto h-screen max-w-7xl items-center">
         <div className="md:px-20 py-10 w-full">
         {/* <h1>
           <Typewriter

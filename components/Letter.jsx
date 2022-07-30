@@ -7,7 +7,7 @@ export default function Letter(props) {
     <div className="px-4 sm:px-20 py-10">
       <div className="sm:flex justify-center">
         <a href={props.link} className="w-[40rem]">
-          <div className="bg-[url('../public/assets/paper-textured-background.jpg')] w-full h-60 sm:h-72">
+          <div className="bg-[url('/assets/paper-textured-background.jpg')] w-full h-60 sm:h-72">
            <div className="bg-[#D8BF99] w-full h-full bg-opacity-80 border-solid border-4 border-[#D8BF99] shadow-xl hover:border-2">
             <div className="flex justify-between p-5">
               <div className="text-sm text-left sm:text-lg">
