@@ -1,6 +1,5 @@
 import Navbar from "../../components/Navbar.jsx";
 import { lettersData } from "../../data/data.js";
-import Back from "../../components/Back.jsx";
 
 export async function getStaticProps({ params }) {
 
