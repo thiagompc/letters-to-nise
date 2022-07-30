@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 const Main = () => {
   return(
     <div className="main-background h-screen overflow-auto flex justify-center">
-      <div className="bg-contain md:flex justify-items-center main-background bg-[url('/assets/NiseOpacity.svg')] bg-no-repeat bg-center sm:bg-auto h-screen w-full items-center">
+      <div className="items-center sm:items-center bg-contain flex justify-items-center main-background bg-[url('/assets/NiseOpacity.svg')] bg-no-repeat bg-center sm:bg-auto h-screen w-full">
         <div className="md:px-20 py-10 w-full">
         {/* <h1>
           <Typewriter
