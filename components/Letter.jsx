@@ -7,9 +7,9 @@ export default function Letter(props) {
   const router = useRouter()
   return(
     <div className="px-4 sm:px-20 py-10">
-      <div className="sm:flex justify-center">
-        <div onClick={()=>router.push(props.link)} className="w-[40rem] cursor-pointer">
-          <div className="bg-[url('/assets/paper-textured-background.jpg')] w-full h-60 sm:h-72">
+      <div className="sm:flex justify-center md:">
+        <div onClick={()=>router.push(props.link)} className="sm:w-[40rem] cursor-pointer">
+          <div className="bg-[url('/assets/paper-textured-background.jpg')] sm:w-full h-60 sm:h-72">
            <div className="bg-[#D8BF99] w-full h-full bg-opacity-80 border-solid border-4 border-[#D8BF99] shadow-xl hover:border-2">
             <div className="flex justify-between p-5">
               <div className="text-sm text-left sm:text-lg">
@@ -38,9 +38,9 @@ export default function Letter(props) {
            </div>
         </div>
         <div className="px-4 pt-10 w-full sm:w-1/2 sm:pt-0 sm:px-10 ">
-          <h2 className="font-secondary">{props.title}</h2>
+          <span className="font-secondary text-2xl">{props.title}</span>
           <div className="py-4">
-            <span className="text-xl">{props.text}</span>
+            <span className="text-lg font-secondary">{props.text}</span>
           </div>
           <Button name="Abrir Carta" link={props.link}/>
         </div>
