@@ -37,13 +37,6 @@ export default function Letter(props) {
           </div>
            </div>
         </div>
-        <div className="px-4 pt-10 w-full sm:w-1/2 sm:pt-0 sm:px-10 ">
-          <span className="font-secondary text-2xl">{props.title}</span>
-          <div className="py-4">
-            <span className="text-lg font-secondary">{props.text}</span>
-          </div>
-          <Button name="Abrir Carta" link={props.link}/>
-        </div>
       </div>
     </div>
   )
