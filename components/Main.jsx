@@ -1,25 +1,19 @@
 import React from "react"
 import Button from "./Button"
-import Typewriter from 'typewriter-effect';
 
 const Main = () => {
   return(
     <div className="main-background h-screen overflow-auto flex justify-center">
-      <div className="items-center sm:items-center bg-contain flex justify-items-center main-background bg-[url('/assets/NiseOpacity.svg')] bg-no-repeat bg-center sm:bg-auto h-screen w-full">
-        <div className="md:px-20 py-10 w-full">
-        {/* <h1>
-          <Typewriter
-            options={{
-              strings: ['Cartas para Nise'],
-              autoStart: true,
-              cursor: "",
-              deleteSpeed: 100000000000000000,
-              deleteChars: 0,
-            }}
-          />
-        </h1> */}
-          <h1 className="pb-10 text-center">Cartas para Nise</h1>
-          {/* <h2 className="px-10 pb-10 text-center font-secondary font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero architecto excepturi quo aperiam iure optio cupiditate, nulla at autem necessitatibus unde sapiente, pariatur, quibusdam asperiores molestias labore deserunt eum.</h2> */}
+      <div className="items-center bg-contain flex justify-items-center main-background bg-[url('/assets/NiseOpacity.svg')] bg-no-repeat bg-center sm:bg-auto">
+        <div className="md:px-20 w-full">
+          <h1 className="pb-10 py-10 text-center">Cartas para Nise</h1>
+          <p className="px-10 pb-10 text-left font-secondary font-light text-2xl">E assim, através do tempo e dos lugares, você foi fascinando grandes, pequenos, pequeníssimos. Diante da correria dessa imensa trajetória, trouxeram-te exatamente aqui na minha interposição de palavras e busca de sentidos que visam dar voz as angústias, reflexões e inquietações da minha nova experiência. Sou Beatriz, assistente social e residente em saúde mental, e direciono todas as minhas cartas a tu, Nise, pois busco seus olhos e coração atentos a minha jornada audaciosa. Tenha uma ótima leitura!</p>
+          <div className="text-end px-10">
+              <br/>
+              <span className="text-2xl">De sua admiradora,</span>
+              <br/>
+              <span className="text-2xl">Beatriz.</span>
+          </div>
           <Button name="Ir às Cartas" link="/cartas"/>
         </div>
       </div>
