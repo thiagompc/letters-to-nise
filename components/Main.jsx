@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 import Button from "./Button"
 
@@ -15,6 +16,9 @@ const Main = () => {
               <span className="text-2xl">Beatriz.</span>
           </div>
           <Button name="Ir às Cartas" link="/cartas"/>
+          <div className="pt-50">
+            <p className="pt-5 text-center ml-auto font-secondary font-light text-xl"><Link href="referencias">Referências</Link></p>
+          </div>
         </div>
       </div>
     </div>
